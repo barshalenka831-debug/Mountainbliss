@@ -11,7 +11,7 @@ import Hotel5 from '../assets/Images/Hotel5.jpg';
 import Shield from '../assets/Images/shield.png'
 import Customerservice from '../assets/Images/customer-service.png'
 import onlineBooking from '../assets/Images/online-booking.png'
-import bgregister from '../assets/Images/bgregister.jpg'
+import userbg from '../assets/Images/userbg.jpg'
 import AboutPage from '../assets/Images/AboutPage.png'
 import Team1 from '../assets/Images/1.png'
 import Team2 from '../assets/Images/2.png'
@@ -34,7 +34,7 @@ export const assets = {
     Shield,
     Customerservice,
     onlineBooking,
-    bgregister,
+    userbg,
     AboutPage,
     Team1,
     Team2,

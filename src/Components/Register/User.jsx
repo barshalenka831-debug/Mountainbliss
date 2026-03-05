@@ -1,26 +1,29 @@
 import { assets } from "../../assets/assets";
-import { useState } from "react"
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
+
 const User = () => {
+
     const [formData, setFormData] = useState({
         firstname: "",
         lastname: "",
         number: "",
         email: "",
+        state: "",
+        city: "",
         password: "",
         confirmpassword: "",
-        agree: false,
-    })
-    const [errors, setErrors] = useState({});
+    });
+
     const handleChange = (e) => {
-        const { name, value, type, checked } = e.target;
+        const { name, value } = e.target;
 
         setFormData({
             ...formData,
-            [name]: type === "checkbox" ? checked : value
+            [name]: value
         });
-
     };
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -29,121 +32,218 @@ const User = () => {
             return;
         }
 
-        alert("Form Submitted:");
+        alert("Form Submitted Successfully");
     };
+
     return (
 
+        <section className="py-5 bg-primary-subtle  " style={{ height: "100vh" }}>
 
-        <section className="layout-pt-lg layout-pb-lg bg-blue-2 " style={{
-            backgroundImage: `url(${assets.bgregister})`, minHeight: "100vh",backgroundSize: "cover",
-                backgroundPosition: "center",opacity:"25"
-        }}>
-            <form onSubmit={handleSubmit}>
-                <div className="container">
-                    <div className="row justify-center">
-                        <div className="col-xl-6 col-lg-7 col-md-9">
-                            <div className="px-50 py-50 sm:px-20 sm:py-20 bg-white shadow-4 rounded-4">
-                                <div className="row y-gap-20">
-                                    <div className="col-12">
-                                        <h1 className="text-22 fw-500">Sign in or create an account</h1>
-                                        <p className="mt-10">Already have an account?
-                                            <NavLink to="/ClickHere" className="text-blue-1">Log in</NavLink></p>
-                                    </div>
+            <div className="container-fluid px-4">
 
-                                    <div className="col-12">
+                <div className="row align-items-center">
 
-                                        <div className="form-input ">
-                                            <input type="text" required name="firstname" onChange={handleChange} value={formData.firstname} />
-                                            <label className="lh-1 text-14 text-light-1">First Name</label>
+                    {/* LEFT SIDE */}
+                    <div className="col-lg-5 mb-5 mb-lg-0 text-black">
+
+                        <h2 className="fw-bold mb-3">
+                            Super Charge your business by <br />
+                            making your growth partner!
+                        </h2>
+
+                        <p className="mb-4 text-danger fs-5 fw-bold">
+                            Trusted by over 45,000 travel agents worldwide
+                        </p>
+
+                        <div className="row text-center">
+
+                            <div className="col-4">
+                                <i className="fa-solid fa-earth-europe fs-2"></i>
+                                <h3 className="fw-bold">80</h3>
+                                <p className="fw-bold text-dark">Countries</p>
+                            </div>
+
+                            <div className="col-4">
+                                <i className="fa-solid fa-hotel fs-2"></i>
+                                <h3 className="fw-bold">43,000+</h3>
+                                <p className="fw-bold text-dark">Hotels</p>
+                            </div>
+
+                            <div className="col-4">
+                                <i className="fa-solid fa-city fs-2"></i>
+                                <h3 className="fw-bold">800+</h3>
+                                <p className="fw-bold text-dark">Cities</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    {/* RIGHT SIDE FORM */}
+                    <div className="col-lg-5 ms-lg-auto">
+
+                        <div className="card shadow-lg border-0 rounded-4">
+                            <div className="card-body p-4 p-lg-5">
+
+                                <h4 className="fw-bold mb-3">
+                                    Sign in or create an account
+                                </h4>
+
+                                <p className="mb-4">
+                                    Already have an account?{" "}
+                                    <NavLink to="/ClickHere" className="text-primary">
+                                        Log in
+                                    </NavLink>
+                                </p>
+
+                                {/* FORM */}
+                                <form onSubmit={handleSubmit}>
+
+                                    <div className="row">
+
+                                        <div className="col-md-6 mb-3">
+                                            <input
+                                                type="text"
+                                                className="form-control"
+                                                placeholder="First Name"
+                                                name="firstname"
+                                                value={formData.firstname}
+                                                onChange={handleChange}
+                                                required
+                                            />
+                                        </div>
+
+                                        <div className="col-md-6 mb-3">
+                                            <input
+                                                type="text"
+                                                className="form-control"
+                                                placeholder="Last Name"
+                                                name="lastname"
+                                                value={formData.lastname}
+                                                onChange={handleChange}
+                                                required
+                                            />
+                                        </div>
+
+                                        <div className="col-12 mb-3">
+                                            <input
+                                                type="tel"
+                                                className="form-control"
+                                                placeholder="Phone Number"
+                                                name="number"
+                                                maxLength="10"
+                                                value={formData.number}
+                                                onChange={handleChange}
+                                                required
+                                            />
+                                        </div>
+
+                                        <div className="col-12 mb-3">
+                                            <input
+                                                type="email"
+                                                className="form-control"
+                                                placeholder="Email Address"
+                                                name="email"
+                                                value={formData.email}
+                                                onChange={handleChange}
+                                                required
+                                            />
+                                        </div>
+
+                                        <div className="col-md-6 mb-3">
+                                            <select
+                                                className="form-select"
+                                                name="state"
+                                                value={formData.state}
+                                                onChange={handleChange}
+                                                required
+                                            >
+                                                <option value="">Select State</option>
+                                                <option value="Odisha">Odisha</option>
+                                                <option value="Maharashtra">Maharashtra</option>
+                                                <option value="Karnataka">Karnataka</option>
+                                                <option value="Delhi">Delhi</option>
+                                                <option value="West Bengal">West Bengal</option>
+                                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                                <option value="Gujarat">Gujarat</option>
+                                                <option value="Rajasthan">Rajasthan</option>
+                                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                <option value="Kerala">Kerala</option>
+                                            </select>
+                                        </div>
+
+                                        <div className="col-md-6 mb-3">
+                                            <select
+                                                className="form-select"
+                                                name="city"
+                                                value={formData.city}
+                                                onChange={handleChange}
+                                                required
+                                            >
+                                                <option value="">Select City</option>
+                                                <option value="Puri">Puri</option>
+                                                <option value="Bhubaneswar">Bhubaneswar</option>
+                                                <option value="Cuttack">Cuttack</option>
+                                                <option value="Bhadrak">Bhadrak</option>
+                                                <option value="Pune">Pune</option>
+                                                <option value="Jaipur">Jaipur</option>
+                                                <option value="Lucknow">Lucknow</option>
+                                                <option value="Kanpur">Kanpur</option>
+                                                <option value="Tokyo">Tokyo</option>
+                                                <option value="Paris">Paris</option>
+                                            </select>
+                                        </div>
+
+                                        <div className="col-md-6 mb-3">
+                                            <input
+                                                type="password"
+                                                className="form-control"
+                                                placeholder="Password"
+                                                name="password"
+                                                value={formData.password}
+                                                onChange={handleChange}
+                                                required
+                                            />
+                                        </div>
+
+                                        <div className="col-md-6 mb-4">
+                                            <input
+                                                type="password"
+                                                className="form-control"
+                                                placeholder="Confirm Password"
+                                                name="confirmpassword"
+                                                value={formData.confirmpassword}
+                                                onChange={handleChange}
+                                                required
+                                            />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-12">
+                                    <button
+                                        type="submit"
+                                        className="btn btn-primary w-100 py-2"
+                                    >
+                                        Sign Up
+                                    </button>
 
-                                        <div className="form-input ">
-                                            <input type="text" required name="lastname" onChange={handleChange} value={formData.lastname} />
-                                            <label className="lh-1 text-14 text-light-1">Last Name</label>
-                                        </div>
+                                </form>
 
-                                    </div>
-                                    <div className="col-12">
-
-                                        <div className="form-input ">
-                                            <input type="tel" required name="number" maxLength="10" pattern="[0-9]{10}" onChange={handleChange} value={formData.number} />
-                                            <label className="lh-1 text-14 text-light-1">Phone</label>
-                                        </div>
-
-                                    </div>
-
-                                    <div className="col-12">
-
-                                        <div className="form-input ">
-                                            <input type="text" required name="email" onChange={handleChange} value={formData.email} />
-                                            <label className="lh-1 text-14 text-light-1">Email</label>
-                                        </div>
-
-                                    </div>
-
-                                    <div className="col-12">
-
-                                        <div className="form-input ">
-                                            <input type="password" required name="password" onChange={handleChange} pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$"
-                                                title="Minimum 8 characters, at least 1 letter, 1 number and 1 special character" value={formData.password} />
-                                            <label className="lh-1 text-14 text-light-1">Password</label>
-                                        </div>
-
-                                    </div>
-
-                                    <div className="col-12">
-
-                                        <div className="form-input ">
-                                            <input type="password" required name="confirmpassword" onChange={handleChange} pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$"
-                                                title="Minimum 8 characters, at least 1 letter, 1 number and 1 special character" value={formData.confirmpassword} />
-                                            <label className="lh-1 text-14 text-light-1">Confirm Password</label>
-                                        </div>
-
-                                    </div>
-
-                                    <div className="col-12">
-
-                                        <div className="d-flex ">
-
-                                            <div className="text-15 lh-15 text-light-1 ml-10">Email me exclusive Agoda promotions. I can opt out later as stated in the Privacy Policy.</div>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div className="col-12">
-                                        <button
-                                            type="submit"
-                                            className="button py-20 -dark-1 bg-blue-1 text-white w-100"
-                                        >
-                                            Sign In
-                                        </button>
-
-                                        {/* <input type="submit" className="button py-20 -dark-1 bg-blue-1 text-white">
-                                            Sign In <div className="icon-arrow-top-right ml-15"></div>
-                                        </input> */}
-
-                                    </div>
-                                </div>
-
-                                <div className="row y-gap-20 pt-30">
-                                    <div className="col-12">
-                                        <div className="text-center px-30">By signing in, I agree to GoTrip Terms of Use and Privacy Policy.</div>
-                                    </div>
-                                </div>
+                                <p className="text-center mt-3 small">
+                                    By signing up, you agree to our Terms & Privacy Policy.
+                                </p>
 
                             </div>
                         </div>
+
                     </div>
+
                 </div>
-            </form>
-        </section >
 
-    )
-}
+            </div>
 
-export default User
+        </section>
+    );
+};
+
+export default User;

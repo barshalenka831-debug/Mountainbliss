@@ -10413,6 +10413,7 @@ div[data-slider]>input[type=range]::-ms-tooltip {
 
 .bg-dark-2 {
   background-color: var(--color-dark-2) !important;
+  padding: 34px;
 }
 
 .bg-dark-3 {
