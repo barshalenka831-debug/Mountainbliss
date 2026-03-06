@@ -46,10 +46,10 @@ const User = () => {
                     {/* LEFT SIDE */}
                     <div className="col-lg-5 mb-5 mb-lg-0 text-black">
 
-                        <h2 className="fw-bold mb-3">
+                        <h1 className="fw-bold mb-3">
                             Super Charge your business by <br />
-                            making your growth partner!
-                        </h2>
+                            making your growth partner !
+                        </h1>
 
                         <p className="mb-4 text-danger fs-5 fw-bold">
                             Trusted by over 45,000 travel agents worldwide

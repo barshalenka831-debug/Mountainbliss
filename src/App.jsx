@@ -17,17 +17,13 @@ function App() {
   return (
     <>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Section />
-              <Rooms />
-              <RecommendedHotels />
-            </>
-          }
+        <Route path="/" element={<>
+          <Section />
+          <Rooms />
+          <RecommendedHotels />
+        </>
+        }
         />
-
         <Route path="/home/aboutus" element={<AboutUs />} />
         <Route path="/home/rentalCars" element={<RentalCars />} />
         <Route path="/register" element={<Register />} />
@@ -35,8 +31,8 @@ function App() {
         <Route path="/User" element={<User />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
-     
-      
+
+
     </>
   )
 }

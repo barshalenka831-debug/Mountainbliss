@@ -20,12 +20,20 @@ import Team4 from '../assets/Images/4.png'
 import Team5 from '../assets/Images/5.png'
 import Team6 from '../assets/Images/6.png'
 import Team7 from '../assets/Images/7.png'
+import car1 from '../assets/Images/car.png'
+import car2 from '../assets/Images/car2.png'
+import car3 from '../assets/Images/car3.png'
+import car4 from '../assets/Images/car4.png'
+import car5 from '../assets/Images/car5.png'
+import car6 from '../assets/Images/car6.png'
+import car7 from '../assets/Images/car7.png'
+import car8 from '../assets/Images/car8.png'
 export const assets = {
     Slider,
     Logo,
     Hotel1,
     Hotel2,
-    Hotel3, 
+    Hotel3,
     Hotel4,
     Hotel5,
     // Hotel6,
@@ -43,4 +51,16 @@ export const assets = {
     Team5,
     Team6,
     Team7,
+    car1,
+    car2,
+    car3,
+    car4,
+    car5,
+    car6,
+    car7,
+    car8,
+
+
+
+
 }

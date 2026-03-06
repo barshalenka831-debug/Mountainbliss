@@ -2,9 +2,11 @@ import '../Style.css'
 import { assets } from '../../assets/assets'
 import Best from '../Recommended/Best'
 import Footer from '../Footer/Footer'
+import Subscribe from '../Footer/Subscribe'
 import Navbar from '../Navbar/Navbar'
 import AboutSummary from './AboutSummary'
 import Team from '../Team/Team'
+import Overheard from '../Team/Testimony'
 
 const AboutUs = () => {
     return (
@@ -12,7 +14,7 @@ const AboutUs = () => {
             <Navbar />
             <section className="section-bg layout-pt-lg layout-pb-lg">
                 <div className="section-bg__item col-12">
-                    <img src={assets.bgregister} alt="image" />
+                    <img src={assets.userbg} alt="image" />
                 </div>
 
                 <div className="container">
@@ -37,9 +39,12 @@ const AboutUs = () => {
                     </div>
                     <Best />
                     <AboutSummary />
-                    <Team/>
+                    <Team />
                 </div>
             </section >
+            <Overheard />
+            <Subscribe />
+            <Footer />
         </div>
     )
 }

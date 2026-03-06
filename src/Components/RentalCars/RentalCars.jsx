@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Navbar from "../Navbar/Navbar"
-
+import CarDetails from "./CarDetails"
 const RentalCars = () => {
 
   const [openLocation, setOpenLocation] = useState(false)
@@ -21,11 +21,10 @@ const RentalCars = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar variant="dark" />
       <section className="pt-60">
         <div className="container">
-
-          <div className="text-center mb-4">
+          <div className="text-center mb-4 pt-4">
             <h1 className="fw-600"> Rental Cars</h1>
           </div>
 
@@ -43,8 +42,7 @@ const RentalCars = () => {
                   </div>
 
                   {openLocation && (
-                    <div className="shadow-2 bg-white px-20 py-20 rounded-4">
-                      <PickupOption city="London" country="United Kingdom" setLocation={setLocation} close={() => setOpenLocation(false)} />
+                    <div className="shadow-2 bg-white px-20 py-20 rounded-4 position-absolute w-100 mt-2" style={{ zIndex: 1000 }}>                      <PickupOption city="London" country="United Kingdom" setLocation={setLocation} close={() => setOpenLocation(false)} />
                       <PickupOption city="New York" country="United States" setLocation={setLocation} close={() => setOpenLocation(false)} />
                       <PickupOption city="Paris" country="France" setLocation={setLocation} close={() => setOpenLocation(false)} />
                       <PickupOption city="Santorini" country="Greece" setLocation={setLocation} close={() => setOpenLocation(false)} />
@@ -64,8 +62,7 @@ const RentalCars = () => {
                   </div>
 
                   {closeLocation && (
-                    <div className="shadow-2 bg-white px-20 py-20 rounded-40">
-                      <DropoffOption city="London" country="United Kingdom" setLocation={setDroplocation} close={() => setCloseLocation(false)} />
+                    <div className="shadow-2 bg-white px-20 py-20 rounded-4 position-absolute w-100 mt-2" style={{ zIndex: 1000 }}>                      <DropoffOption city="London" country="United Kingdom" setLocation={setDroplocation} close={() => setCloseLocation(false)} />
                       <DropoffOption city="New York" country="United States" setLocation={setDroplocation} close={() => setCloseLocation(false)} />
                       <DropoffOption city="Paris" country="France" setLocation={setDroplocation} close={() => setCloseLocation(false)} />
                       <DropoffOption city="Madrid" country="Spain" setLocation={setDroplocation} close={() => setCloseLocation(false)} />
@@ -88,12 +85,11 @@ const RentalCars = () => {
                   </div>
 
                   {openDate && (
-                    <div className="shadow-2 bg-white px-20 py-20 rounded-4">
-                      <input
-                        type="date"
-                        className="form-control"
-                        onChange={(e) => setCheckIn(e.target.value)}
-                      />
+                    <div className="shadow-2 bg-white px-20 py-20 rounded-4 position-absolute w-100 mt-2" style={{ zIndex: 1000 }}>                      <input
+                      type="date"
+                      className="form-control"
+                      onChange={(e) => setCheckIn(e.target.value)}
+                    />
                     </div>
                   )}
 
@@ -114,12 +110,11 @@ const RentalCars = () => {
                   </div>
 
                   {openDropDate && (
-                    <div className="shadow-2 bg-white px-20 py-20 rounded-4">
-                      <input
-                        type="date"
-                        className="form-control"
-                        onChange={(e) => setCheckOut(e.target.value)}
-                      />
+                    <div className="shadow-2 bg-white px-20 py-20 rounded-4 position-absolute w-100 mt-2" style={{ zIndex: 1000 }}>                      <input
+                      type="date"
+                      className="form-control"
+                      onChange={(e) => setCheckOut(e.target.value)}
+                    />
                     </div>
                   )}
 
@@ -172,6 +167,8 @@ const RentalCars = () => {
 
         </div>
       </section>
+      <CarDetails />
+
     </>
   )
 }
@@ -226,7 +223,6 @@ const CounterRow = ({ title, count, setCount, min }) => (
       </button>
 
     </div>
-
 
   </div>
 
