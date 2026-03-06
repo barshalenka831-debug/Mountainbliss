@@ -1,13 +1,14 @@
 import { assets } from "../../assets/assets"
-
+import AOS from "aos"
+import "aos/dist/aos.css"
 const Best = () => {
     return (
         <div>
-            <section className="layout-pt-md layout-pb-lg">
+            <section className="layout-pt-md layout-pb-lg" data-aos="fade-up">
                 <div data-anim-wrap className="container">
                     <div className="row y-gap-20 justify-between">
 
-                        <div className="col-lg-3 col-sm-6">
+                        <div className="col-lg-3 col-sm-6" >
 
                             <div className="featureIcon -type-1 ">
                                 <div className="d-flex justify-center">

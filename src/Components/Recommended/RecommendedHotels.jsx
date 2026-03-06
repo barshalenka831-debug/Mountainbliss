@@ -2,12 +2,14 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination } from "swiper/modules"
 import HotelCard from "./RecommendedCard"
 import Subscribe from "../Footer/Subscribe"
+import CustomerSays from "../Team/customerSays"
 import Footer from "../Footer/Footer"
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 import Best from "./Best"
 import { assets } from "../../assets/assets"
+import GetInspiration from "./GetInspiration"
 
 const RecommendedHotels = () => {
   return (
@@ -109,6 +111,8 @@ const RecommendedHotels = () => {
         </div>
       </div>
       <Best />
+      <CustomerSays/>
+      <GetInspiration/>
        <Subscribe/>
       <Footer/>
     </section>

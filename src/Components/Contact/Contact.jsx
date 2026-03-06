@@ -2,15 +2,43 @@ import Navbar from "../Navbar/Navbar"
 import Best from "../Recommended/Best"
 import Subscribe from "../Footer/Subscribe"
 import Footer from "../Footer/Footer"
+import { useState } from "react"
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        fullname: "",
+        email: "",
+        subject: "",
+        message: "",
+    })
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        alert("Form Submitted Successfully");
+        alert("Form Submitted Successfully");
+
+        setFormData({
+            fullname: "",
+            email: "",
+            subject: "",
+            message: "",
+        });
+    };
     return (
-        <div>
+        <div className="py-15 border-top-light mt-30">
             <Navbar variant="dark" />
             {/* Google Map */}
             <div className="ratio ratio-16x9 mt-5">
+                
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.6069169217944!2d85.83816867907805!3d20.267234932719436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a79f7b44227b%3A0xed8987252238055f!2sBhubaneswar%20Railway%20Station%20(Mastercanteen)!5e1!3m2!1sen!2sin!4v1772696965965!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3741.432111608333!2d85.82517647523754!3d20.323760081154944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDE5JzI1LjUiTiA4NcKwNDknMzkuOSJF!5e0!3m2!1sen!2sin!4v1772793492982!5m2!1sen!2sin"   
                     width="100%"
                     height="450"
                     style={{ border: 0 }}
@@ -30,45 +58,44 @@ const Contact = () => {
                                 <div className="text-22 fw-500">
                                     Send a message
                                 </div>
+                                <form onSubmit={handleSubmit}>
+                                    <div className="row y-gap-20 pt-20">
+                                        <div className="col-12">
+                                            <div className="form-input">
+                                                <input type="text" required name="fullname" onChange={handleChange} value={formData.fullname} />
+                                                <label className="lh-1 text-16 text-light-1">Full Name</label>
+                                            </div>
+                                        </div>
 
-                                <div className="row y-gap-20 pt-20">
+                                        <div className="col-12">
+                                            <div className="form-input">
+                                                <input type="email" required name="email" onChange={handleChange} value={formData.email} />
+                                                <label className="lh-1 text-16 text-light-1">Email</label>
+                                            </div>
+                                        </div>
 
-                                    <div className="col-12">
-                                        <div className="form-input">
-                                            <input type="text" required />
-                                            <label className="lh-1 text-16 text-light-1">Full Name</label>
+                                        <div className="col-12">
+                                            <div className="form-input">
+                                                <input type="text" required name="subject" onChange={handleChange} value={formData.subject} />
+                                                <label className="lh-1 text-16 text-light-1">Subject</label>
+                                            </div>
+                                        </div>
+
+                                        <div className="col-12">
+                                            <div className="form-input">
+                                                <textarea rows="4" required name="message" onChange={handleChange} value={formData.message}></textarea>
+                                                <label className="lh-1 text-16 text-light-1">Your Message</label>
+                                            </div>
+                                        </div>
+
+                                        <div className="col-auto">
+                                            <button className="btn btn-primary d-flex align-items-center gap-2">
+                                                Send a Message
+                                                <div className="icon-arrow-top-right"></div>
+                                            </button>
                                         </div>
                                     </div>
-
-                                    <div className="col-12">
-                                        <div className="form-input">
-                                            <input type="email" required />
-                                            <label className="lh-1 text-16 text-light-1">Email</label>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-12">
-                                        <div className="form-input">
-                                            <input type="text" required />
-                                            <label className="lh-1 text-16 text-light-1">Subject</label>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-12">
-                                        <div className="form-input">
-                                            <textarea rows="4" required></textarea>
-                                            <label className="lh-1 text-16 text-light-1">Your Message</label>
-                                        </div>
-                                    </div>
-
-                                    <div className="col-auto">
-                                        <button className="btn btn-primary d-flex align-items-center gap-2">
-                                            Send a Message
-                                            <div className="icon-arrow-top-right"></div>
-                                        </button>
-                                    </div>
-
-                                </div>
+                                </form>
 
                             </div>
                         </div>
@@ -99,14 +126,14 @@ const Contact = () => {
                         <div className="col-auto">
                             <div className="text-14 text-light-1">Toll Free Customer Care</div>
                             <div className="text-18 fw-500 mt-10">
-                                +(1) 123 456 7890
+                                +(91) 999 888 7777
                             </div>
                         </div>
 
                         <div className="col-auto">
                             <div className="text-14 text-light-1">Need live support?</div>
                             <div className="text-18 fw-500 mt-10">
-                                hi@gotrip.com
+                                mountainbliss.gmail.com
                             </div>
                         </div>
 

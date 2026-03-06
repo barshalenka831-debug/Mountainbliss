@@ -12,6 +12,8 @@ import Subscribe from './Components/Footer/Subscribe'
 import AboutUs from './Components/About/AboutUs'
 import RentalCars from './Components/RentalCars/RentalCars'
 import Contact from './Components/Contact/Contact'
+import Bookcar from './Components/RentalCars/Bookcar'
+import Destination from './Components/Destination/Destination'
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
         <Route path="/ClickHere" element={<ClickHere />} />
         <Route path="/User" element={<User />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/car/carbooking" element={<Bookcar />} />
+        <Route path="/home/Destination" element={<Destination />} />
       </Routes>
 
 

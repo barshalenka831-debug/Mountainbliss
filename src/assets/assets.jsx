@@ -5,9 +5,6 @@ import Hotel2 from '../assets/Images/Hotel2.jpg';
 import Hotel3 from '../assets/Images/Hotel3.jpg';
 import Hotel4 from '../assets/Images/Hotel4.jpg';
 import Hotel5 from '../assets/Images/Hotel5.jpg';
-// import Hotel6 from '../assets/Images/Hotel6.png';
-// import Hotel7 from '../assets/Images/Hotel7.png';
-// import Hotel8 from '../assets/Images/Hotel8.png';
 import Shield from '../assets/Images/shield.png'
 import Customerservice from '../assets/Images/customer-service.png'
 import onlineBooking from '../assets/Images/online-booking.png'
@@ -28,6 +25,17 @@ import car5 from '../assets/Images/car5.png'
 import car6 from '../assets/Images/car6.png'
 import car7 from '../assets/Images/car7.png'
 import car8 from '../assets/Images/car8.png'
+import experience from '../assets/Images/experience.png'
+import experience1 from '../assets/Images/experience1.png'
+import View1 from '../assets/Images/view-1.jpg'
+import View2 from '../assets/Images/view-2.jpg'
+import View3 from '../assets/Images/view-3.jpg'
+import Destination from '../assets/Images/Destination.png';
+import Tour1 from '../assets/Images/1/1.png'
+import Tour2 from '../assets/Images/1/2.png'
+import Tour3 from '../assets/Images/1/3.png'
+import Tour4 from '../assets/Images/1/4.png'
+import Tour5 from '../assets/Images/1/5.png'
 export const assets = {
     Slider,
     Logo,
@@ -36,9 +44,6 @@ export const assets = {
     Hotel3,
     Hotel4,
     Hotel5,
-    // Hotel6,
-    // Hotel7,
-    // Hotel8,
     Shield,
     Customerservice,
     onlineBooking,
@@ -59,8 +64,17 @@ export const assets = {
     car6,
     car7,
     car8,
-
-
+    experience,
+    experience1,
+    View1,
+    View2,
+    View3,
+    Destination,
+    Tour1,
+    Tour2,
+    Tour3,
+    Tour4,
+    Tour5
 
 
 }

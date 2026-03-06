@@ -9,7 +9,7 @@ const Overheard = () => {
                 "Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic.",
             image: assets.Team2,
             name: "Courtney Henry",
-            designation: "Web Designer",
+            designation: "Manager",
         },
         {
             title: "Hotel Equatorial Melaka",
@@ -17,7 +17,7 @@ const Overheard = () => {
                 "Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic.",
             image: assets.Team3,
             name: "Courtney Henry",
-            designation: "Web Designer",
+            designation: "Ceo",
         },
         {
             title: "Hotel Equatorial Melaka",
@@ -38,14 +38,14 @@ const Overheard = () => {
                     <div className="col-auto">
                         <div className="sectionTitle -md">
                             <h2 className="sectionTitle__title">Overheard from travelers</h2>
-                            <p className="sectionTitle__text mt-5 sm:mt-0">
+                            <p className="sectionTitle__text mt-5 mb-3">
                                 These popular destinations have a lot to offer
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <div className="row gap-4">
+                <div className="row gap-4 px-4">
                     {cards.map((card, index) => (
                         <div className="card" style={{ width: "25rem" }} key={index}>
                             <div className="testimonials -type-1 bg-white rounded-4 pt-40 pb-30 px-40">

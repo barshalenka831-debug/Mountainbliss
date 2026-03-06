@@ -5,6 +5,7 @@ import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/scrollbar"
 import { assets } from '../../assets/assets'
+import Deals from '../Recommended/Deals'
 
 const Rooms = () => {
   return (
@@ -24,7 +25,7 @@ const Rooms = () => {
         </div>
 
         {/* Swiper Slider */}
-        <div className="pt-40 sm:pt-20 position-relative">
+        <div className="pt-50 sm:pt-20 position-relative">
 
           <Swiper
             modules={[Navigation, Scrollbar]}
@@ -81,6 +82,7 @@ const Rooms = () => {
 
         </div>
       </div>
+      <Deals/>
     </section>
   )
 }
@@ -88,7 +90,7 @@ const Rooms = () => {
 export default Rooms
 
 
-// 🔹 Reusable City Card Component
+//  City Card Component
 const CityCard = ({ city, image }) => {
   return (
     <a href="#" className="citiesCard -type-1 d-block rounded-4">

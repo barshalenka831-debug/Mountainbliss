@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { assets } from "../../assets/assets";
 import { NavLink } from "react-router-dom";
 import "../Style.css";
-import User from "../Register/User";
-
 import '@fortawesome/fontawesome-free/css/all.min.css';
 const Navbar = ({ variant = "transparent" }) => {
 
@@ -82,7 +80,7 @@ const Navbar = ({ variant = "transparent" }) => {
 
                       <li>
                         <NavLink
-                          to="/"
+                          to="/home/Destination"
                           className={({ isActive }) => isActive ? "active" : ""}
                           onClick={() => setMenuOpen(false)}
                         >
@@ -111,7 +109,7 @@ const Navbar = ({ variant = "transparent" }) => {
                       </li>
                       <li>
                         <NavLink
-                          to="/home/rentalCars"
+                          to="/car/carbooking"
                           className={({ isActive }) => isActive ? "active" : ""}
                           onClick={() => setMenuOpen(false)}
                         >
