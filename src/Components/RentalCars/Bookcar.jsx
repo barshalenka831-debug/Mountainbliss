@@ -437,9 +437,7 @@ const Bookcar = () => {
 
                                                     <div className="d-flex justify-between mb-20">
                                                         <div className="text-15 text-dark-1">
-                                                            <span className="js-lower"></span>
-                                                            -
-                                                            <span className="js-upper"></span>
+                                                            <input type="range"  style={{width:"200px"}}/>
                                                         </div>
                                                     </div>
 
@@ -819,6 +817,7 @@ const Bookcar = () => {
 
                                     <div className="sidebar__item -no-border">
                                         <div className="flex-center ratio ratio-15:9 js-lazy" >
+                                            
                                             <button data-x-click="mapFilter" className="button py-15 px-24 -blue-1 bg-white text-dark-1 absolute">
                                                 <i className="icon-destination text-22 mr-10"></i>
                                                 Show on map
@@ -1527,8 +1526,8 @@ const PickupOption = ({ city, country, setLocation, close }) => (
             close()
         }}
     >
-                <i className="fa-solid fa-location-dot"></i>
- {city} — {country}
+        <i className="fa-solid fa-location-dot"></i>
+        {city} — {country}
     </div>
 )
 

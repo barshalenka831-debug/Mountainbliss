@@ -9,7 +9,7 @@ import Deals from '../Recommended/Deals'
 
 const Rooms = () => {
   return (
-    <section className="layout-pt-lg layout-pb-md">
+   <section className="layout-pt-lg layout-pb-md">
       <div className="container">
 
         {/* Section Title */}
@@ -28,14 +28,13 @@ const Rooms = () => {
         <div className="pt-50 sm:pt-20 position-relative">
 
           <Swiper
-            modules={[Navigation, Scrollbar]}
+            modules={[Navigation]}
             spaceBetween={30}
             slidesPerView={4}
             navigation={{
               nextEl: ".custom-next",
               prevEl: ".custom-prev",
             }}
-            scrollbar={{ draggable: true }}
             breakpoints={{
               320: { slidesPerView: 1 },
               576: { slidesPerView: 2 },
@@ -44,27 +43,22 @@ const Rooms = () => {
             }}
           >
 
-            {/* New York */}
             <SwiperSlide>
               <CityCard city="New York" image={assets.Hotel1} />
             </SwiperSlide>
 
-            {/* London */}
             <SwiperSlide>
               <CityCard city="London" image={assets.Hotel2} />
             </SwiperSlide>
 
-            {/* Barcelona */}
             <SwiperSlide>
               <CityCard city="Barcelona" image={assets.Hotel3} />
             </SwiperSlide>
 
-            {/* Sydney */}
             <SwiperSlide>
               <CityCard city="Sydney" image={assets.Hotel4} />
             </SwiperSlide>
 
-            {/* Rome */}
             <SwiperSlide>
               <CityCard city="Rome" image={assets.Hotel5} />
             </SwiperSlide>
@@ -84,6 +78,7 @@ const Rooms = () => {
       </div>
       <Deals/>
     </section>
+
   )
 }
 

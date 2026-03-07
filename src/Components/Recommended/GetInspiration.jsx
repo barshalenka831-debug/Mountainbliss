@@ -39,17 +39,19 @@ const GetInspiration = () => {
                         {GetInspirations.map((GetInspirations, Index) => (
 
                             <div key={Index} className="col-lg-4 col-sm-6">
-                                <div className="blogCard__image">
-                                    <div className="ratio ratio-4:3 rounded-4 rounded-8">
-                                        <img className="img-ratio js-lazy" src={GetInspirations.Image} alt="image" />
+                                <a href="" className="blogCard -type-1 d-block ">
+
+                                    <div className="blogCard__image">
+                                        <div className="ratio ratio-4:3 rounded-4 rounded-8">
+                                            <img className="img-ratio js-lazy" src={GetInspirations.Image} alt="image" />
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div className="mt-20 mb-4">
-                                    <h4 className="text-dark-1 text-18 fw-500">{GetInspirations.Describtion}</h4>
-                                    <div className="text-light-1 text-15 lh-14 mt-5">{GetInspirations.Date}</div>
-                                </div>
-
+                                    <div className="mt-3 mb-4">
+                                        <h4 className="text-dark-1 text-18 fw-500">{GetInspirations.Describtion}</h4>
+                                        <div className="text-light-1 text-15 lh-14 mt-3">{GetInspirations.Date}</div>
+                                    </div>
+                                </a>
                             </div>
                         ))}
                     </div>

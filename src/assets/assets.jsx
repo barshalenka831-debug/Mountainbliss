@@ -36,6 +36,25 @@ import Tour2 from '../assets/Images/1/2.png'
 import Tour3 from '../assets/Images/1/3.png'
 import Tour4 from '../assets/Images/1/4.png'
 import Tour5 from '../assets/Images/1/5.png'
+import Activities1 from '../assets/Images/Activities/1.png'
+import Activities2 from '../assets/Images/Activities/2.png'
+import Activities3 from '../assets/Images/Activities/3.png'
+import Activities4 from '../assets/Images/Activities/4.png'
+import Activities5 from '../assets/Images/Activities/5.png'
+import Rental1 from '../assets/Images/rentals/1.png'
+import Rental2 from '../assets/Images/rentals/2.png'
+import Rental3 from '../assets/Images/rentals/3.png'
+import Rental4 from '../assets/Images/rentals/4.png'
+import Near1 from '../assets/Images/NearDestinatin/1.png'
+import Near2 from '../assets/Images/NearDestinatin/2.png'
+import Near3 from '../assets/Images/NearDestinatin/3.png'
+import Near4 from '../assets/Images/NearDestinatin/4.png'
+import Near5 from '../assets/Images/NearDestinatin/5.png'
+import Near6 from '../assets/Images/NearDestinatin/6.png'
+import Near7 from '../assets/Images/NearDestinatin/7.png'
+import Near8 from '../assets/Images/NearDestinatin/8.png'
+import Near9 from '../assets/Images/NearDestinatin/9.png'
+
 export const assets = {
     Slider,
     Logo,
@@ -74,7 +93,23 @@ export const assets = {
     Tour2,
     Tour3,
     Tour4,
-    Tour5
-
-
+    Tour5,
+    Activities1,
+    Activities2,
+    Activities3,
+    Activities4,
+    Activities5,
+    Rental1,
+    Rental2,
+    Rental3,
+    Rental4,
+    Near1,
+    Near2,
+    Near3,
+    Near4,
+    Near5,
+    Near6,
+    Near7,
+    Near8,
+    Near9,
 }

@@ -184,7 +184,8 @@ const PickupOption = ({ city, country, setLocation, close }) => (
       close()
     }}
   >
-    📍 {city} — {country}
+    <i className="fa-solid fa-location-dot"></i>
+    {city} — {country}
   </div>
 )
 
@@ -196,7 +197,8 @@ const DropoffOption = ({ city, country, setLocation, close }) => (
       close()
     }}
   >
-    📍 {city} — {country}
+    <i className="fa-solid fa-location-dot"></i>
+    {city} — {country}
   </div>
 )
 const CounterRow = ({ title, count, setCount, min }) => (

@@ -85,7 +85,7 @@ const PopularTour = () => {
 
                                             <div className="cardImage__wishlist">
                                                 <button className="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                                                    <i class="fa-regular fa-heart text-12"></i>
+                                                    <i className="fa-regular fa-heart text-12"></i>
                                                 </button>
                                             </div>
 

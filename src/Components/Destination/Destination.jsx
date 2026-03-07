@@ -1,9 +1,14 @@
 import { assets } from "../../assets/assets"
 import Navbar from "../Navbar/Navbar"
-import RecommendedCard from "../Recommended/RecommendedCard";
 import '../Style.css'
+import HolidayRentals from "./HolidayRentals";
 import PopularTour from "./PopularTour";
 import TrendingActivity from "./TrendingActivity";
+import Getinspiration from '../Recommended/GetInspiration'
+import Faq from "./Faq";
+import DestinationNear from "./DestinationNear";
+import Footer from '../Footer/Footer'
+import Subscribe from '../Footer/Subscribe'
 const Destination = () => {
     const categories = [
         { icon: "fa-bed", name: "Hotel" },
@@ -141,6 +146,12 @@ const Destination = () => {
             </section>
             <PopularTour />
             <TrendingActivity/>
+            <HolidayRentals/>
+            <Getinspiration/>
+            <Faq/>
+            <DestinationNear/>
+            <Subscribe/>
+            <Footer/>
         </div>
     )
 }
