@@ -2,12 +2,13 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/pagination"
-
+import AOS from "aos"
+import "aos/dist/aos.css"
 const RecommendedCard = ({ title, location, slider, price, images }) => {
   return (
-    <a href="#" className="hotelsCard -type-1">
+    <a href="/" className="hotelsCard -type-1">
 
-      <div className="hotelsCard__image">
+      <div className="hotelsCard__image " data-aos="fade-up">
         <div className="cardImage ratio ratio-1:1">
           <div className="cardImage__content">
 
@@ -47,7 +48,7 @@ const RecommendedCard = ({ title, location, slider, price, images }) => {
           {title}
         </h4>
 
-        <p className="text-light-1 lh-14 text-14 mt-5">{location}</p>
+        <p className="text-light-1 lh-14 text-14 mt-3">{location}</p>
 
         <div className="d-flex items-center mt-20">
           <div className="flex-center bg-blue-1 rounded-4 size-30 text-12 fw-600 text-white">
@@ -61,7 +62,7 @@ const RecommendedCard = ({ title, location, slider, price, images }) => {
           </div>
         </div>
 
-        <div className="mt-5">
+        <div className="mt-3">
           <div className="fw-500">
             Starting from <span className="text-blue-1">{price}</span>
           </div>

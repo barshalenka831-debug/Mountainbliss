@@ -39,7 +39,7 @@ const HolidayRentals = () => {
                         <div className="col-auto">
                             <div className="sectionTitle -md">
                                 <h2 className="sectionTitle__title">Featured Holiday Rentals</h2>
-                                <p className=" sectionTitle__text mt-5 sm:mt-0">Interdum et malesuada fames ac ante ipsum</p>
+                                <p className=" sectionTitle__text mt-3 sm:mt-0">Interdum et malesuada fames ac ante ipsum</p>
                             </div>
                         </div>
 
@@ -52,7 +52,7 @@ const HolidayRentals = () => {
                         </div>
                     </div>
 
-                    <div className="row y-gap-30 pt-40 sm:pt-20">
+                    <div className="row y-gap-30 pt-20">
                         {Rentals.map((Rentals, Index) => (
                             <div key={Index} className="col-xl-3 col-lg-3 col-sm-6">
 
@@ -92,7 +92,7 @@ const HolidayRentals = () => {
                                         </div>
 
                                         <div className="d-flex items-center mt-20">
-                                            <div className="flex-center bg-blue-1 rounded-4 size-30 text-12 fw-600 text-white">4.8</div>
+                                            <div className="flex-center bg-blue-1 rounded-0 size-30 text-12 fw-600 text-white">4.8</div>
                                             <div className="text-14 text-dark-1 fw-500 ml-10">Exceptional</div>
                                             <div className="text-14 text-light-1 ml-10">3,014 reviews</div>
                                         </div>

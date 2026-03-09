@@ -14,13 +14,13 @@ const AboutUs = () => {
             <Navbar />
             <section className="section-bg layout-pt-lg layout-pb-lg">
                 <div className="section-bg__item col-12">
-                    <img src={assets.userbg} alt="image" />
+                    <img src={assets.gb11} alt="image" />
                 </div>
 
                 <div className="container">
                     <div className="row justify-center text-center">
                         <div className="col-xl-6 col-lg-8 col-md-10">
-                            <h1 className="text-40 md:text-25 fw-600 text-white">Looking for joy?</h1>
+                            <h1 className="text-40 md:text-25 fw-600 text-white pt-5">Looking for joy?</h1>
                             <div className="text-white mt-15">Your trusted trip companion</div>
                         </div>
                     </div>

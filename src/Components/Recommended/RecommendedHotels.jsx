@@ -17,7 +17,7 @@ const RecommendedHotels = () => {
       <div className="container">
 
         {/* Section Header */}
-        <div className="row y-gap-10 justify-between items-end">
+        <div className="row ">
           <div className="col-auto">
             <div className="sectionTitle -md">
               <h2 className="sectionTitle__title fw-bold ">Recommended</h2>
@@ -73,7 +73,6 @@ const RecommendedHotels = () => {
             <SwiperSlide>
               <HotelCard
                 images={assets.Hotel3}
-
                 title="The Westin New York at Times Square"
                 location="Manhattan, New York"
                 price="$899"
@@ -103,6 +102,7 @@ const RecommendedHotels = () => {
             <div className="hotels-pagination pagination -dots text-border"></div>
 
             <button className="hotels-next d-flex items-center text-24 arrow-right-hover">
+              
               <i className="icon icon-arrow-right"></i>
             </button>
 

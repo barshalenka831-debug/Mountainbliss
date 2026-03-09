@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { assets } from "../../assets/assets"
 import Navbar from "../Navbar/Navbar"
+import Subscribe from "../Footer/Subscribe"
+import Footer from "../Footer/Footer"
 
 const Bookcar = () => {
     const [openLocation, setOpenLocation] = useState(false)
@@ -261,7 +263,7 @@ const Bookcar = () => {
                                     </div>
 
                                     <div className="sidebar__item -no-border">
-                                        <h5 className="text-18 fw-500 mb-10">Location (Heathrow Airport)</h5>
+                                        <h5 className="text-18 fw-500 mb-3">Location (Heathrow Airport)</h5>
                                         <div className="sidebar-checkbox">
 
                                             <div className="row y-gap-10 items-center justify-between">
@@ -311,8 +313,8 @@ const Bookcar = () => {
                                         </div>
                                     </div>
 
-                                    <div className="sidebar__item">
-                                        <h5 className="text-18 fw-500 mb-10">Car Category</h5>
+                                    <div className="sidebar__item mt-3">
+                                        <h5 className="text-18 fw-500  mt-2">Car Category</h5>
                                         <div className="sidebar-checkbox">
 
                                             <div className="row y-gap-10 items-center justify-between">
@@ -327,16 +329,12 @@ const Bookcar = () => {
                                                         </div>
 
                                                         <div className="text-15 ml-10">Small</div>
-
                                                     </div>
-
                                                 </div>
-
                                                 <div className="col-auto">
                                                     <div className="text-15 text-light-1">$92</div>
                                                 </div>
                                             </div>
-
                                             <div className="row y-gap-10 items-center justify-between">
                                                 <div className="col-auto">
 
@@ -413,23 +411,17 @@ const Bookcar = () => {
                                                                 <div className="form-checkbox__icon icon-check"></div>
                                                             </div>
                                                         </div>
-
                                                         <div className="text-15 ml-10">SUV</div>
-
                                                     </div>
-
                                                 </div>
-
                                                 <div className="col-auto">
                                                     <div className="text-15 text-light-1">$679</div>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
-
-                                    <div className="sidebar__item pb-30">
-                                        <h5 className="text-18 fw-500 mb-10">Price</h5>
+                                    <div className="sidebar__item mt-2">
+                                        <h5 className="text-18 fw-500 mb-10 mt-2">Price</h5>
                                         <div className="row x-gap-10 y-gap-30">
                                             <div className="col-12">
                                                 <div className="js-price-rangeSlider">
@@ -544,7 +536,7 @@ const Bookcar = () => {
                                             <div className="row y-gap-10 items-center justify-between">
                                                 <div className="col-auto">
 
-                                                    <div className="d-flex items-center">
+                                                    <div className="d-flex items-center mb-2">
                                                         <div className="form-checkbox ">
                                                             <input type="checkbox" name="name" />
                                                             <div className="form-checkbox__mark">
@@ -552,7 +544,7 @@ const Bookcar = () => {
                                                             </div>
                                                         </div>
 
-                                                        <div className="text-15 ml-10">Enterprise</div>
+                                                        <div className="text-15 ml-10 ">Enterprise</div>
 
                                                     </div>
 
@@ -567,9 +559,8 @@ const Bookcar = () => {
                                     </div>
 
                                     <div className="sidebar__item">
-                                        <h5 className="text-18 fw-500 mb-10">Car Specifications</h5>
+                                        <h5 className="text-18 fw-500 mb-10 mt-2">Car Specifications</h5>
                                         <div className="sidebar-checkbox">
-
                                             <div className="row y-gap-10 items-center justify-between">
                                                 <div className="col-auto">
 
@@ -580,7 +571,6 @@ const Bookcar = () => {
                                                                 <div className="form-checkbox__icon icon-check"></div>
                                                             </div>
                                                         </div>
-
                                                         <div className="text-15 ml-10">With air conditioning</div>
 
                                                     </div>
@@ -661,7 +651,7 @@ const Bookcar = () => {
                                             <div className="row y-gap-10 items-center justify-between">
                                                 <div className="col-auto">
 
-                                                    <div className="d-flex items-center">
+                                                    <div className="d-flex items-center mb-2">
                                                         <div className="form-checkbox ">
                                                             <input type="checkbox" name="name" />
                                                             <div className="form-checkbox__mark">
@@ -684,7 +674,7 @@ const Bookcar = () => {
                                     </div>
 
                                     <div className="sidebar__item">
-                                        <h5 className="text-18 fw-500 mb-10">Mileage/Kilometres</h5>
+                                        <h5 className="text-18 fw-500 mb-10 mt-2">Mileage/Kilometres</h5>
                                         <div className="sidebar-checkbox">
 
                                             <div className="row y-gap-10 items-center justify-between">
@@ -712,15 +702,14 @@ const Bookcar = () => {
                                             <div className="row y-gap-10 items-center justify-between">
                                                 <div className="col-auto">
 
-                                                    <div className="d-flex items-center">
+                                                    <div className="d-flex items-center mb-2">
                                                         <div className="form-checkbox ">
                                                             <input type="checkbox" name="name" />
                                                             <div className="form-checkbox__mark">
                                                                 <div className="form-checkbox__icon icon-check"></div>
                                                             </div>
                                                         </div>
-
-                                                        <div className="text-15 ml-10">Unlimited</div>
+                                                        <div className="text-15 ml-10 ">Unlimited</div>
 
                                                     </div>
 
@@ -763,7 +752,7 @@ const Bookcar = () => {
                                             <div className="row y-gap-10 items-center justify-between">
                                                 <div className="col-auto">
 
-                                                    <div className="d-flex items-center">
+                                                    <div className="d-flex items-center mb-2">
                                                         <div className="form-checkbox ">
                                                             <input type="checkbox" name="name" />
                                                             <div className="form-checkbox__mark">
@@ -813,17 +802,6 @@ const Bookcar = () => {
 
                                         </div>
                                     </div>
-
-
-                                    <div className="sidebar__item -no-border">
-                                        <div className="flex-center ratio ratio-15:9 js-lazy" >
-                                            
-                                            <button data-x-click="mapFilter" className="button py-15 px-24 -blue-1 bg-white text-dark-1 absolute">
-                                                <i className="icon-destination text-22 mr-10"></i>
-                                                Show on map
-                                            </button>
-                                        </div>
-                                    </div>
                                 </div>
                             </aside>
                         </div>
@@ -869,9 +847,7 @@ const Bookcar = () => {
                                                     <div className="d-flex items-center">
                                                         <div className="form-checkbox ">
                                                             <input type="checkbox" name="name" />
-                                                            <div className="form-checkbox__mark">
-                                                                <div className="form-checkbox__icon icon-check"></div>
-                                                            </div>
+                                                           
                                                         </div>
 
                                                         <div className="text-15 ml-10">Airport (meet &amp; greet)</div>
@@ -1259,21 +1235,18 @@ const Bookcar = () => {
                                                 </div>
                                             </div>
 
-                                            <div className="row y-gap-10 items-center justify-between">
+                                            <div className="row y-gap-10 items-center justify-between ">
                                                 <div className="col-auto">
 
-                                                    <div className="d-flex items-center">
-                                                        <div className="form-checkbox ">
+                                                    <div className="d-flex items-center ">
+                                                        <div className="form-checkbox  ">
                                                             <input type="checkbox" name="name" />
                                                             <div className="form-checkbox__mark">
                                                                 <div className="form-checkbox__icon icon-check"></div>
                                                             </div>
                                                         </div>
-
-                                                        <div className="text-15 ml-10">4 doors</div>
-
+                                                        <div className="text-15 ml-10 ">4 doors</div>
                                                     </div>
-
                                                 </div>
 
                                                 <div className="col-auto">
@@ -1285,7 +1258,7 @@ const Bookcar = () => {
                                     </div>
 
                                     <div className="sidebar__item">
-                                        <h5 className="text-18 fw-500 mb-10">Mileage/Kilometres</h5>
+                                        <h5 className="text-18 fw-500 mb-10 mt-2">Mileage/Kilometres</h5>
                                         <div className="sidebar-checkbox">
 
                                             <div className="row y-gap-10 items-center justify-between">
@@ -1335,8 +1308,8 @@ const Bookcar = () => {
                                         </div>
                                     </div>
 
-                                    <div className="sidebar__item">
-                                        <h5 className="text-18 fw-500 mb-10">Transmission</h5>
+                                    <div className="sidebar__item ">
+                                        <h5 className="text-18 fw-500 mb-10 mt-2 ">Transmission</h5>
                                         <div className="sidebar-checkbox">
 
                                             <div className="row y-gap-10 items-center justify-between">
@@ -1386,10 +1359,9 @@ const Bookcar = () => {
                                         </div>
                                     </div>
 
-                                    <div className="sidebar__item">
-                                        <h5 className="text-18 fw-500 mb-10">Fuel Policy</h5>
+                                    <div className="sidebar__item ">
+                                        <h5 className="text-18 fw-500 mb-10 ">Fuel Policy</h5>
                                         <div className="sidebar-checkbox">
-
                                             <div className="row y-gap-10 items-center justify-between">
                                                 <div className="col-auto">
 
@@ -1512,6 +1484,8 @@ const Bookcar = () => {
                     </div>
                 </div>
             </section>
+            <Subscribe/>
+            <Footer/>
         </div>
     )
 }

@@ -2,29 +2,43 @@ import { useEffect, useState } from "react";
 import { assets } from "../../assets/assets";
 import { NavLink } from "react-router-dom";
 import "../Style.css";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 const Navbar = ({ variant = "transparent" }) => {
 
+  // State for mobile menu
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // State for sticky navbar
   const [sticky, setSticky] = useState(false);
 
+
+  // Handle sticky navbar on scroll
   useEffect(() => {
     const handleScroll = () => {
-      window.scrollY > 50 ? setSticky(true) : setSticky(false);
+      if (window.scrollY > 50) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+
 
   return (
     <header
-      className={`header js-header 
-  ${menuOpen ? "is-menu-opened" : ""} 
-  ${sticky ? "navbar-sticky" : ""}
-  ${variant === "dark" ? "navbar-dark" : ""}
-  ${variant === "light" ? "navbar-light" : ""}
-`}
+      className={`header js-header
+        ${menuOpen ? "is-menu-opened" : ""}
+        ${sticky ? "navbar-sticky" : ""}
+        ${variant === "dark" ? "navbar-dark" : ""}
+        ${variant === "light" ? "navbar-light" : ""}
+      `}
     >
       <div
         data-anim="fade"
@@ -32,28 +46,32 @@ const Navbar = ({ variant = "transparent" }) => {
       >
         <div className="row justify-content-between align-items-center">
 
-          {/* LEFT SIDE */}
+          {/* ================= LEFT SIDE ================= */}
           <div className="col-6 col-lg-auto">
             <div className="d-flex items-center">
 
-              {/* Logo */}
+              {/* -------- Logo -------- */}
               <NavLink to="/" className="header-logo mr-20">
                 <img src={assets.Logo} alt="logo icon" />
               </NavLink>
 
-              {/* MENU */}
+
+              {/* -------- Navigation Menu -------- */}
               <div
                 className={`header-menu ${menuOpen ? "is-menu-active" : ""}`}
                 data-x="mobile-menu"
               >
+
+                {/* Mobile Overlay */}
                 <div
                   className="mobile-overlay"
                   onClick={() => setMenuOpen(false)}
                 ></div>
 
+
                 <div className="header-menu__content">
 
-                  {/* CLOSE BUTTON */}
+                  {/* Close Button (Mobile) */}
                   <div className="mobile-menu-close d-lg-none">
                     <button
                       className="close-btn"
@@ -63,109 +81,141 @@ const Navbar = ({ variant = "transparent" }) => {
                     </button>
                   </div>
 
+
                   <div className="mobile-bg js-mobile-bg"></div>
 
+
+                  {/* -------- Menu Links -------- */}
                   <div className="menu js-navList">
                     <ul className="menu__nav text-white -is-active">
 
                       <li className="menu-item">
                         <NavLink
-                          to="/"
-                          className={({ isActive }) => isActive ? "active" : ""}
+                          to="/home"
+                          className={({ isActive }) =>
+                            isActive ? "active" : ""
+                          }
                           onClick={() => setMenuOpen(false)}
                         >
                           Home
                         </NavLink>
                       </li>
 
+
                       <li>
                         <NavLink
                           to="/home/Destination"
-                          className={({ isActive }) => isActive ? "active" : ""}
+                          className={({ isActive }) =>
+                            isActive ? "active" : ""
+                          }
                           onClick={() => setMenuOpen(false)}
                         >
                           Destinations
                         </NavLink>
                       </li>
 
+
                       <li>
                         <NavLink
-                          to="/"
-                          className={({ isActive }) => isActive ? "active" : ""}
+                          to="/hotellist"
+                          className={({ isActive }) =>
+                            isActive ? "active" : ""
+                          }
                           onClick={() => setMenuOpen(false)}
                         >
-                          Pages
+                          Hotel List
                         </NavLink>
                       </li>
+
 
                       <li>
                         <NavLink
                           to="/home/aboutus"
-                          className={({ isActive }) => isActive ? "active" : ""}
+                          className={({ isActive }) =>
+                            isActive ? "active" : ""
+                          }
                           onClick={() => setMenuOpen(false)}
                         >
                           About Us
                         </NavLink>
                       </li>
+
+
                       <li>
                         <NavLink
-                          to="/car/carbooking"
-                          className={({ isActive }) => isActive ? "active" : ""}
+                          to="/bookcar"
+                          className={({ isActive }) =>
+                            isActive ? "active" : ""
+                          }
                           onClick={() => setMenuOpen(false)}
                         >
                           Car Service
                         </NavLink>
                       </li>
 
+
                       <li>
                         <NavLink
                           to="/contact"
-                          className={({ isActive }) => isActive ? "active" : ""}
+                          className={({ isActive }) =>
+                            isActive ? "active" : ""
+                          }
                           onClick={() => setMenuOpen(false)}
                         >
                           Contact
                         </NavLink>
                       </li>
-
+                      <li>
+                        <NavLink
+                          to="/blog"
+                          className={({ isActive }) =>
+                            isActive ? "active" : ""
+                          }
+                          onClick={() => setMenuOpen(false)}
+                        >
+                          Blog
+                        </NavLink>
+                      </li>
                     </ul>
                   </div>
 
+
+                  {/* Mobile Footer */}
                   <div className="mobile-footer px-20 py-20 border-top-light js-mobile-footer"></div>
 
                 </div>
               </div>
+
             </div>
           </div>
-
-          {/* RIGHT SIDE */}
+          {/* ================= RIGHT SIDE ================= */}
           <div className="col-auto">
             <div className="d-flex items-center">
 
-              {/* Desktop Buttons */}
+              {/* Desktop Button */}
               <div className="d-none d-lg-flex items-center ml-20 is-menu-opened-hide">
-
-
-
                 <NavLink
                   to="/register"
                   className="button px-30 fw-400 text-14 border-white -outline-white text-white ml-20 signup"
                 >
                   Sign In / Register
                 </NavLink>
-
               </div>
 
-              {/* Mobile Icons */}
-              <div className="d-flex d-lg-none x-gap-20 items-center pl-30 text-white ">
 
+              {/* Mobile Icons */}
+              <div className="d-flex d-lg-none x-gap-20 items-center pl-30 text-white">
+
+                {/* Login Icon */}
                 <div>
                   <NavLink
                     to="/login"
-                    className="d-flex items-center icon-user text-inherit text-22 "
+                    className="d-flex items-center icon-user text-inherit text-22"
                   ></NavLink>
                 </div>
 
-                {/* 3 Bar Button */}
+
+                {/* Mobile Menu Button */}
                 <div>
                   <button
                     className={`mobile-menu-toggle ${menuOpen ? "active" : ""}`}
@@ -184,7 +234,7 @@ const Navbar = ({ variant = "transparent" }) => {
 
         </div>
       </div>
-    </header >
+    </header>
   );
 };
 

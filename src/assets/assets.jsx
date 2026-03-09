@@ -54,8 +54,16 @@ import Near6 from '../assets/Images/NearDestinatin/6.png'
 import Near7 from '../assets/Images/NearDestinatin/7.png'
 import Near8 from '../assets/Images/NearDestinatin/8.png'
 import Near9 from '../assets/Images/NearDestinatin/9.png'
-
-export const assets = {
+import gb11 from '../assets/Images/bg11.jpg'
+import Blog1 from '../assets/Images/Blogs/Blog-1.jpg'
+import Blog2 from '../assets/Images/Blogs/Blog-2.jpg'
+import Blog3 from '../assets/Images/Blogs/Blog-3.jpg'
+import Blog4 from '../assets/Images/Blogs/Blog-4.jpg'
+import Blog5 from '../assets/Images/Blogs/Blog-5.jpg'
+import Blog6 from '../assets/Images/Blogs/Blog-6.jpg'
+import Blog7 from '../assets/Images/Blogs/Blog-7.jpg'
+import Error from  '../assets/Images/404.png'
+export const assets = { 
     Slider,
     Logo,
     Hotel1,
@@ -112,4 +120,14 @@ export const assets = {
     Near7,
     Near8,
     Near9,
+    gb11,
+    Blog1,
+    Blog2,
+    Blog3,
+    Blog4,
+    Blog5,
+    Blog6,
+    Blog7,
+    Error
 }
+

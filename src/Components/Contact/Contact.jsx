@@ -56,7 +56,7 @@ const Contact = () => {
                             <div className="map-form px-40 pt-40 pb-50 bg-white rounded-4 shadow-4">
 
                                 <div className="text-22 fw-500">
-                                    Send a message
+                                    Send a message 
                                 </div>
                                 <form onSubmit={handleSubmit}>
                                     <div className="row y-gap-20 pt-20">
@@ -91,7 +91,7 @@ const Contact = () => {
                                         <div className="col-auto">
                                             <button className="btn btn-primary d-flex align-items-center gap-2">
                                                 Send a Message
-                                                <div className="icon-arrow-top-right"></div>
+                                                <i className="fa-regular fa-paper-plane"></i>
                                             </button>
                                         </div>
                                     </div>
@@ -126,14 +126,14 @@ const Contact = () => {
                         <div className="col-auto">
                             <div className="text-14 text-light-1">Toll Free Customer Care</div>
                             <div className="text-18 fw-500 mt-10">
-                                +(91) 999 888 7777
+                                +(91) 873 005 1559
                             </div>
                         </div>
 
                         <div className="col-auto">
                             <div className="text-14 text-light-1">Need live support?</div>
                             <div className="text-18 fw-500 mt-10">
-                                mountainbliss.gmail.com
+                               mountainblisstravel <br />andstay@gmail.com
                             </div>
                         </div>
 
@@ -149,11 +149,11 @@ const Contact = () => {
                                     <i className="fa-brands fa-twitter"></i>
                                 </a>
 
-                                <a className="text-black" target="_blank" href="https://www.instagram.com/">
+                                <a className="text-black" target="_blank" href="https://www.instagram.com/mountainblisstravelandstay/">
                                     <i className="fa-brands fa-instagram"></i>
                                 </a>
 
-                                <a className="text-black" target="_blank" href="https://www.linkedin.com/">
+                                <a className="text-black" target="_blank" href="https://www.linkedin.com/company/mountainblisstravelandstay/posts/?feedView=all">
                                     <i className="fa-brands fa-linkedin"></i>
                                 </a>
                             </div>
@@ -164,7 +164,7 @@ const Contact = () => {
 
                 </div>
             </section>
-            <section className="layout-pt-lg layout-pb-md">
+            <section className="layout-pt-lg layout-pb-md bg-blue-2">
                 <div data-anim-wrap className="container">
                     <div className="row justify-center text-center">
                         <div className="col-auto">

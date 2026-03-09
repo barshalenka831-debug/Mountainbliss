@@ -48,7 +48,6 @@ const Team = () => {
     return (
         <section className="layout-pt-lg layout-pb-lg">
             <div className="container">
-
                 {/* TITLE */}
                 <div className="text-center mb-40">
                     <h2 className="text-40 fw-600">Our Team</h2>
@@ -56,7 +55,6 @@ const Team = () => {
                         Meet our professional team members
                     </p>
                 </div>
-
                 {/* TEAM GRID */}
                 <div className="row y-gap-30">
 
@@ -81,7 +79,13 @@ const Team = () => {
                                         {item.position}
                                     </div>
                                 </div>
-
+                                {/* Social Icons */}
+                                <div className="team-social mt-2">
+                                    <a href="/"><i className="fa-brands fa-facebook-f"></i></a>
+                                    <a href="/"><i className="fa-brands fa-instagram"></i></a>
+                                    <a href="/"><i className="fa-brands fa-x-twitter"></i></a>
+                                    <a href="/"><i className="fa-brands fa-linkedin"></i></a>
+                                </div>
                             </div>
                         </div>
                     ))}
@@ -89,7 +93,7 @@ const Team = () => {
                 </div>
 
             </div>
-        </section>
+        </section >
     )
 }
 

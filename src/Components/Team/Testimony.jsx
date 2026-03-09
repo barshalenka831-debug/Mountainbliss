@@ -6,7 +6,7 @@ const Overheard = () => {
         {
             title: "Hotel Equatorial Melaka",
             paragraph:
-                "Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that so easy. Agoda price was fantastic.",
+                "Overheard from travelersWe came to the mountains to slow down, and Mountain Bliss made that possible. The silence, the views, and the warmth of the place stayed with us long after we left.”",
             image: assets.Team2,
             name: "Courtney Henry",
             designation: "Manager",

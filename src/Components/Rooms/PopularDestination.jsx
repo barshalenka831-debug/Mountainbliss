@@ -9,7 +9,7 @@ import Deals from '../Recommended/Deals'
 
 const Rooms = () => {
   return (
-   <section className="layout-pt-lg layout-pb-md">
+    <section className="layout-pt-lg layout-pb-md" data-aos="zoom-in-down">
       <div className="container">
 
         {/* Section Title */}
@@ -25,7 +25,7 @@ const Rooms = () => {
         </div>
 
         {/* Swiper Slider */}
-        <div className="pt-50 sm:pt-20 position-relative">
+        <div className="pt-20 sm:pt-20 position-relative">
 
           <Swiper
             modules={[Navigation]}
@@ -44,23 +44,23 @@ const Rooms = () => {
           >
 
             <SwiperSlide>
-              <CityCard city="New York" image={assets.Hotel1} />
+              <CityCard city="SIKKIM" image={assets.Hotel1}  />
             </SwiperSlide>
 
             <SwiperSlide>
-              <CityCard city="London" image={assets.Hotel2} />
+              <CityCard city="MEGHALAYA" image={assets.Hotel2} />
             </SwiperSlide>
 
             <SwiperSlide>
-              <CityCard city="Barcelona" image={assets.Hotel3} />
+              <CityCard city="HIMACHAL PRADESH" image={assets.Hotel3} />
             </SwiperSlide>
 
             <SwiperSlide>
-              <CityCard city="Sydney" image={assets.Hotel4} />
+              <CityCard city="JAMMU" image={assets.Hotel4} />
             </SwiperSlide>
 
             <SwiperSlide>
-              <CityCard city="Rome" image={assets.Hotel5} />
+              <CityCard city="LEH" image={assets.Hotel5} />
             </SwiperSlide>
 
           </Swiper>
@@ -76,7 +76,7 @@ const Rooms = () => {
 
         </div>
       </div>
-      <Deals/>
+      <Deals />
     </section>
 
   )
@@ -88,9 +88,9 @@ export default Rooms
 //  City Card Component
 const CityCard = ({ city, image }) => {
   return (
-    <a href="#" className="citiesCard -type-1 d-block rounded-4">
+    <a href="/" className="citiesCard -type-1 d-block rounded-4">
       <div className="citiesCard__image ratio ratio-3:4">
-        <img src={image} alt={city} />
+        <img src={image} alt={city} style={{objectFit: "cover"}} />
       </div>
 
       <div className="citiesCard__content d-flex flex-column justify-between text-center pt-30 pb-20 px-20">

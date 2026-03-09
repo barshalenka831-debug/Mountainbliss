@@ -45,14 +45,14 @@ const TrendingActivity = () => {
             <div className="col-auto">
               <div className="sectionTitle -md">
                 <h2 className="sectionTitle__title">Trending Activity</h2>
-                <p className=" sectionTitle__text mt-5 sm:mt-0">Interdum et malesuada fames ac ante ipsum</p>
+                <p className=" sectionTitle__text mt-3 sm:mt-0">Mountain Hikes, Farm walks, Waterfall Lawn Games, Sunrise & Sunset views Stargazing, Mountain Bike Park, Bonfire, Camping, Experience</p>
               </div>
             </div>
             <div className="col-auto">
             </div>
           </div>
 
-          <div className="row y-gap-30 pt-40 sm:pt-20">
+          <div className="row y-gap-30 pt-20 ">
             {Activities.map((Activities, Index) => (
 
               <div key={Index} className="col-xl-3 col-lg-3 col-sm-6">
@@ -94,11 +94,11 @@ const TrendingActivity = () => {
                     <div className="row justify-between items-center pt-10">
                       <div className="col-auto">
                         <div className="d-flex items-center">
-                          <div className="icon-star text-yellow-1 text-10 mr-5"></div>
+                          <i className="fa-solid fa-star text-10 text-warning mr-5"></i>
 
                           <div className="text-14 text-light-1">
                             <span className="text-15 text-dark-1 fw-500">4.82</span>
-                            94 reviews
+                            <em/> 94 reviews
                           </div>
                         </div>
                       </div>

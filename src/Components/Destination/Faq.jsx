@@ -10,19 +10,19 @@ const Faq = () => {
 
   const faqs = [
     {
-      question: "What do I need to hire a car?",
+      question: "Explore Your Options",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+        "Discover homestays, cab services, dining spots, and travel experiences tailored to your destination."
     },
     {
-      question: "How old do I have to be to rent a car?",
+      question: "Plan Your Journey",
       answer:
-        "Most companies require drivers to be at least 21 years old."
+        "Choose how you travel, where you stay, and where you dine — all in one smooth planning flow.."
     },
     {
-      question: "Can I book a hire car for someone else?",
+      question: "Customize Your Experience",
       answer:
-        "Yes, but the main driver must provide their license and identification."
+        "Filter by location, budget, amenities, cuisine, or travel preferences to match your style."
     },
     {
       question: "How do I find the cheapest car hire deal?",
