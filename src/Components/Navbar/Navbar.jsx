@@ -91,7 +91,7 @@ const Navbar = ({ variant = "transparent" }) => {
 
                       <li className="menu-item">
                         <NavLink
-                          to="/home"
+                          to="/"
                           className={({ isActive }) =>
                             isActive ? "active" : ""
                           }
