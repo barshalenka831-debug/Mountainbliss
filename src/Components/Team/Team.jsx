@@ -81,10 +81,10 @@ const Team = () => {
                                 </div>
                                 {/* Social Icons */}
                                 <div className="team-social mt-2">
-                                    <a href="/"><i className="fa-brands fa-facebook-f"></i></a>
-                                    <a href="/"><i className="fa-brands fa-instagram"></i></a>
-                                    <a href="/"><i className="fa-brands fa-x-twitter"></i></a>
-                                    <a href="/"><i className="fa-brands fa-linkedin"></i></a>
+                                    <a href="https://www.facebook.com/"><i className="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/"><i className="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.twitter.com/"><i className="fa-brands fa-x-twitter"></i></a>
+                                    <a href="https://in.linkedin.com/"><i className="fa-brands fa-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>

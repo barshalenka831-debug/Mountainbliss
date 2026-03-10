@@ -20,7 +20,7 @@ const Deals = () => {
                 <h4 className="text-40 lg:text-26 text-white">Things to do on<br/> your trip</h4>
 
                 <div className="d-inline-block mt-30">
-                  <a href="#" className="button px-48 py-15 -blue-1 -min-180 bg-white text-dark-1">Experiences</a>
+                  <a className="button px-48 py-15 -blue-1 -min-180 bg-white text-dark-1">Experiences</a>
                 </div>
               </div>
             </div>
@@ -42,7 +42,7 @@ const Deals = () => {
                 <h4 className="text-40 lg:text-26 text-white">Up to 70% Discount!</h4>
 
                 <div className="d-inline-block mt-30">
-                  <a href="#" className="button px-48 py-15 -blue-1 -min-180 bg-white text-dark-1">Learn More</a>
+                  <a className="button px-48 py-15 -blue-1 -min-180 bg-white text-dark-1">Learn More</a>
                 </div>
               </div>
             </div>

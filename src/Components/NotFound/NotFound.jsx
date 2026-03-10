@@ -1,6 +1,6 @@
 import { assets } from "../../assets/assets"
 import { Link } from "react-router-dom"
-const Error = () => {
+const NotFound = () => {
   return (
     <section className="layout-pt-lg layout-pb-lg">
       <div className="container">
@@ -28,4 +28,4 @@ const Error = () => {
   )
 }
 
-export default Error
+export default NotFound

@@ -119,7 +119,7 @@ const Blog = () => {
             {Articles.map((article, index) => (
               <div key={index} className="col-12 col-sm-6 col-lg-4">
 
-                <a href="/" className="blogCard -type-1 d-block">
+                <div className="blogCard -type-1 d-block">
 
                   <div className="blogCard__image">
                     <div className="ratio ratio-4x3 rounded-3 overflow-hidden">
@@ -142,7 +142,7 @@ const Blog = () => {
                     </div>
                   </div>
 
-                </a>
+                </div>
 
               </div>
             ))}

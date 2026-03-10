@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination } from "swiper/modules"
 import HotelCard from "./RecommendedCard"
 import Subscribe from "../Footer/Subscribe"
-import CustomerSays from "../Team/customerSays"
+import CustomerSays from "../Team/CustomerSays"
 import Footer from "../Footer/Footer"
 import "swiper/css"
 import "swiper/css/navigation"
@@ -21,8 +21,8 @@ const RecommendedHotels = () => {
           <div className="col-auto">
             <div className="sectionTitle -md">
               <h2 className="sectionTitle__title fw-bold ">Recommended</h2>
-              <p className="sectionTitle__text fs-5">
-                Interdum et malesuada fames ac ante ipsum
+              <p className="sectionTitle__text fw-bold">
+                Travelling with partners or groups builds deeper bonds through shared moments, challenges, and laughter.
               </p>
             </div>
           </div>

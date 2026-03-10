@@ -1,4 +1,5 @@
 import { assets } from '../../assets/assets'
+import RatingCounter from './RatingCounter'
 
 const customerSays = () => {
     return (
@@ -12,10 +13,7 @@ const customerSays = () => {
                                 amet tempor nibh finibus et. Aenean eu enim justo.</p>
 
                             <div className="row y-gap-30 pt-60 lg:pt-40">
-                                <div className="col-sm-5 col-6">
-                                    <div className="text-30 lh-15 fw-600">13m+</div>
-                                    <div className="text-light-1 lh-15">Happy People</div>
-                                </div>
+                               <RatingCounter/>
 
                                 <div className="col-sm-5 col-6">
                                     <div className="text-30 lh-15 fw-600">4.88</div>
@@ -41,7 +39,7 @@ const customerSays = () => {
                                     <div className="swiper-slide">
                                         <div className="row items-center x-gap-30 y-gap-20">
                                             <div className="col-auto">
-                                                <img src={assets.Team5} alt="image" className="rounded-circle" style={{height:"100px",width:"100px"}} />
+                                                <img src={assets.Team5} alt="image" className="rounded-circle" style={{height:"100px",width:"100px",objectFit:"cover",}} />
                                             </div>
 
                                             <div className="col-auto">

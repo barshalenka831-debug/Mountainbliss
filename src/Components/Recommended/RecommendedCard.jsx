@@ -6,7 +6,7 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 const RecommendedCard = ({ title, location, slider, price, images }) => {
   return (
-    <a href="/" className="hotelsCard -type-1">
+    <div className="hotelsCard -type-1">
 
       <div className="hotelsCard__image " data-aos="fade-up">
         <div className="cardImage ratio ratio-1:1">
@@ -69,7 +69,7 @@ const RecommendedCard = ({ title, location, slider, price, images }) => {
         </div>
       </div>
 
-    </a>
+    </div>
   )
 }
 

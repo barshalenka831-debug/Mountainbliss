@@ -15,8 +15,9 @@ import HotelList from './Components/HotelLists/HotelList'
 import Floatingbtn from './Components/FloatingButton/FloatingIcon'
 import PreLoader from './Components/PreLoader/PreLoader'
 import Blog from './Components/Blog/Blog'
-import Error from './Components/404Page/Error'
+import NotFound from './Components/NotFound/NotFound'
 import { useState, useEffect } from 'react'
+import Reservation from './Components/Reservation/Reservation'
 
 function App() {
 
@@ -53,9 +54,9 @@ function App() {
         <Route path="/home/Destination" element={<Destination />} />
         <Route path="/hotellist" element={<HotelList />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="*" element={<Error />} />
+        <Route path="/reservation" element={<Reservation />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
-
       <Floatingbtn />
     </>
   )

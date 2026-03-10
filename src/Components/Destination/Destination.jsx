@@ -52,9 +52,9 @@ const Destination = () => {
                         </div>
 
                         <div className="col-auto">
-                            <a href="#" className="text-14 text-light-1">
+                            <p className="text-14 text-light-1">
                                 London Tourism: Best of London
-                            </a>
+                            </p>
                         </div>
 
                     </div>
@@ -91,7 +91,6 @@ const Destination = () => {
 
                     {/* Category Buttons */}
                     <div className="row x-gap-20 y-gap-20 pt-20 text-center category-box">
-
                         <div className="col">
                             <button className="w-100 d-flex flex-column items-center justify-center px-20 py-20 rounded-4 border border-light text-16 fw-500">
                                 <i className="fa-solid fa-bed text-25 mb-10"></i>

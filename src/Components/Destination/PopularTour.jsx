@@ -52,7 +52,7 @@ const PopularTour = () => {
                         <div className="col-auto">
                             <div className="sectionTitle -md">
                                 <h2 className="sectionTitle__title">Most Popular Tours</h2>
-                                <p className=" sectionTitle__text mt-3 sm:mt-0">Interdum et malesuada fames ac ante ipsum</p>
+                                <p className=" sectionTitle__text mt-3 sm:mt-0">Crafting your stay with MountainBliss Travel & Stay means a stress-free, hassle-free journey made just for you. From planning and travel to treks, hikes, bonfire nights, and calm mountain mornings, we handle everything—and you simply relax, breathe, and enjoy the mountains.</p>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ const PopularTour = () => {
 
                             <div key={Index} className="col-xl-3 col-lg-3 col-sm-6">
 
-                                <a href="" className="tourCard -type-1 rounded-4 ">
+                                <div className="tourCard -type-1 rounded-4 ">
                                     <div className="tourCard__image">
 
 
@@ -123,7 +123,7 @@ const PopularTour = () => {
                                             </div>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
 
                             </div>
                         ))}

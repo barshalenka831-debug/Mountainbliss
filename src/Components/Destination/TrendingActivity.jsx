@@ -56,9 +56,7 @@ const TrendingActivity = () => {
             {Activities.map((Activities, Index) => (
 
               <div key={Index} className="col-xl-3 col-lg-3 col-sm-6">
-                <a href="" className="activityCard -type-1 rounded-4 ">
-
-
+                <div className="activityCard -type-1 rounded-4 ">
                   <div className="activityCard__image">
 
                     <div className="cardImage ratio ratio-1:1">
@@ -110,7 +108,7 @@ const TrendingActivity = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </div>
               </div>
 
             ))}

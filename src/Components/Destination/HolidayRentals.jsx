@@ -42,21 +42,13 @@ const HolidayRentals = () => {
                                 <p className=" sectionTitle__text mt-3 sm:mt-0">Interdum et malesuada fames ac ante ipsum</p>
                             </div>
                         </div>
-
-                        <div className="col-auto">
-
-                            <a href="#" className="button -md -blue-1 bg-blue-1-05 text-blue-1">
-                                More <div className="icon-arrow-top-right ml-15"></div>
-                            </a>
-
-                        </div>
                     </div>
 
                     <div className="row y-gap-30 pt-20">
                         {Rentals.map((Rentals, Index) => (
                             <div key={Index} className="col-xl-3 col-lg-3 col-sm-6">
 
-                                <a href="" className="rentalCard -type-1 rounded-4 ">
+                                <div className="rentalCard -type-1 rounded-4 ">
                                     <div className="rentalCard__image">
 
                                         <div className="cardImage ratio ratio-1:1">
@@ -103,7 +95,7 @@ const HolidayRentals = () => {
                                             </div>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         ))}
                     </div>

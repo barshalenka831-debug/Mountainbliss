@@ -1397,7 +1397,7 @@ const Bookcar = () => {
                                 <div className="row">
                                     {cars.map((car, index) => (
                                         <div key={index} className="col-lg-4 col-sm-6">
-                                            <a href="/" className="carCard -type-1 d-block rounded-4">
+                                            <div className="carCard -type-1 d-block rounded-4">
 
                                                 <div className="carCard__image">
                                                     <div className="cardImage ratio border-light ratio-6:5">
@@ -1474,7 +1474,7 @@ const Bookcar = () => {
                                                     </div>
                                                 </div>
 
-                                            </a>
+                                            </div>
                                         </div>
                                     ))}
                                 </div>

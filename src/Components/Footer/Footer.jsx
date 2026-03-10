@@ -15,7 +15,7 @@ const Footer = () => {
 
                             <div className="mt-35">
                                 <div className="text-14 mt-30">Need live support?</div>
-                                <a href="#" className="text-18 fw-500 text-blue-1 mt-5">mountainblisstravel <br />andstay@gmail.com</a>
+                                <a className="text-18 fw-500 text-blue-1 mt-5">mountainblisstravel <br />andstay@gmail.com</a>
                             </div>
                         </div>
 

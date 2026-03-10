@@ -17,8 +17,8 @@ const Rooms = () => {
           <div className="col-auto">
             <div className="sectionTitle -md">
               <h2 className="sectionTitle__title fw-bold">Popular Destinations</h2>
-              <p className="sectionTitle__text fs-5">
-                These popular destinations have a lot to offer
+              <p className="sectionTitle__text fw-bold">
+                Travelling with partners or groups builds deeper bonds through shared moments, challenges, and laughter.
               </p>
             </div>
           </div>
@@ -44,23 +44,23 @@ const Rooms = () => {
           >
 
             <SwiperSlide>
-              <CityCard city="SIKKIM" image={assets.Hotel1}  />
+              <CityCard city="Hotels" image={assets.Hotel1} />
             </SwiperSlide>
 
             <SwiperSlide>
-              <CityCard city="MEGHALAYA" image={assets.Hotel2} />
+              <CityCard city="Apartments" image={assets.Hotel2} />
             </SwiperSlide>
 
             <SwiperSlide>
-              <CityCard city="HIMACHAL PRADESH" image={assets.Hotel3} />
+              <CityCard city="Resorts" image={assets.Hotel3} />
             </SwiperSlide>
 
             <SwiperSlide>
-              <CityCard city="JAMMU" image={assets.Hotel4} />
+              <CityCard city="Villas" image={assets.Hotel4} />
             </SwiperSlide>
 
             <SwiperSlide>
-              <CityCard city="LEH" image={assets.Hotel5} />
+              <CityCard city="Cabins" image={assets.Hotel5} />
             </SwiperSlide>
 
           </Swiper>
@@ -71,7 +71,7 @@ const Rooms = () => {
           </button>
 
           <button className="custom-next section-slider-nav -next flex-center button -blue-1 bg-white shadow-1 size-40 rounded-full sm:d-none">
-            <i className="fa-solid fa-arrow-right"></i>
+            <i className="fa-solid fa-arrow-right text-dark"></i>
           </button>
 
         </div>
@@ -88,9 +88,9 @@ export default Rooms
 //  City Card Component
 const CityCard = ({ city, image }) => {
   return (
-    <a href="/" className="citiesCard -type-1 d-block rounded-4">
+    <div className="citiesCard -type-1 d-block rounded-4">
       <div className="citiesCard__image ratio ratio-3:4">
-        <img src={image} alt={city} style={{objectFit: "cover"}} />
+        <img src={image} alt={city} style={{ objectFit: "cover" }} />
       </div>
 
       <div className="citiesCard__content d-flex flex-column justify-between text-center pt-30 pb-20 px-20">
@@ -106,11 +106,8 @@ const CityCard = ({ city, image }) => {
           <h4 className="text-26 md:text-20 lh-13 text-white mb-20">
             {city}
           </h4>
-          <button className="button col-12 h-60 -blue-1 bg-white text-dark-1">
-            Discover
-          </button>
         </div>
       </div>
-    </a>
+    </div>
   )
 }

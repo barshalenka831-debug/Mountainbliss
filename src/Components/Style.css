@@ -407,7 +407,7 @@ button:focus {
 
 .button.-blue-1:hover {
   border-color: var(--color-blue-1);
-  background-color: var(--color-blue-1) !important;
+  background-color: var(--color-error-2) !important;
   color: white !important;
 }
 
@@ -810,12 +810,6 @@ input.text-white::placeholder {
   border-radius: 4px;
 }
 
-.form-checkbox__icon {
-  display: none;
-  position: absolute;
-  font-size: 8px;
-  color: white;
-}
 
 .form-checkbox input {
   cursor: pointer;
@@ -12639,4 +12633,48 @@ a {
     font-weight: 700;
   }
 
+}
+
+/* Hotel slider container */
+.hotel-slider {
+  position: relative;
+}
+
+/* Navigation buttons */
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.slider-nav:hover {
+  background: #0d6efd;
+  color: white;
+}
+
+/* Left arrow */
+[class^="custom-prev"] {
+  left: 10px;
+}
+
+/* Right arrow */
+[class^="custom-next"] {
+  right: 10px;
+}
+
+/* Arrow icon */
+.slider-nav i {
+  font-size: 14px;
 }

@@ -3,16 +3,11 @@ import { assets } from "../../assets/assets";
 import { NavLink } from "react-router-dom";
 import "../Style.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
 const Navbar = ({ variant = "transparent" }) => {
-
   // State for mobile menu
   const [menuOpen, setMenuOpen] = useState(false);
-
   // State for sticky navbar
   const [sticky, setSticky] = useState(false);
-
-
   // Handle sticky navbar on scroll
   useEffect(() => {
     const handleScroll = () => {
@@ -46,31 +41,27 @@ const Navbar = ({ variant = "transparent" }) => {
       >
         <div className="row justify-content-between align-items-center">
 
-          {/* ================= LEFT SIDE ================= */}
+          {/* LEFT SIDE */}
           <div className="col-6 col-lg-auto">
             <div className="d-flex items-center">
 
-              {/* -------- Logo -------- */}
+              {/*  Logo  */}
               <NavLink to="/" className="header-logo mr-20">
                 <img src={assets.Logo} alt="logo icon" />
               </NavLink>
 
 
-              {/* -------- Navigation Menu -------- */}
+              {/*  Navigation Menu  */}
               <div
                 className={`header-menu ${menuOpen ? "is-menu-active" : ""}`}
                 data-x="mobile-menu"
               >
-
                 {/* Mobile Overlay */}
                 <div
                   className="mobile-overlay"
                   onClick={() => setMenuOpen(false)}
                 ></div>
-
-
                 <div className="header-menu__content">
-
                   {/* Close Button (Mobile) */}
                   <div className="mobile-menu-close d-lg-none">
                     <button
@@ -80,11 +71,7 @@ const Navbar = ({ variant = "transparent" }) => {
                       <i className="fa-solid fa-xmark"></i>
                     </button>
                   </div>
-
-
                   <div className="mobile-bg js-mobile-bg"></div>
-
-
                   {/* -------- Menu Links -------- */}
                   <div className="menu js-navList">
                     <ul className="menu__nav text-white -is-active">
@@ -100,8 +87,6 @@ const Navbar = ({ variant = "transparent" }) => {
                           Home
                         </NavLink>
                       </li>
-
-
                       <li>
                         <NavLink
                           to="/home/Destination"
@@ -113,8 +98,6 @@ const Navbar = ({ variant = "transparent" }) => {
                           Destinations
                         </NavLink>
                       </li>
-
-
                       <li>
                         <NavLink
                           to="/hotellist"
@@ -126,8 +109,6 @@ const Navbar = ({ variant = "transparent" }) => {
                           Hotel List
                         </NavLink>
                       </li>
-
-
                       <li>
                         <NavLink
                           to="/home/aboutus"
@@ -139,8 +120,6 @@ const Navbar = ({ variant = "transparent" }) => {
                           About Us
                         </NavLink>
                       </li>
-
-
                       <li>
                         <NavLink
                           to="/bookcar"
@@ -152,8 +131,6 @@ const Navbar = ({ variant = "transparent" }) => {
                           Car Service
                         </NavLink>
                       </li>
-
-
                       <li>
                         <NavLink
                           to="/contact"
@@ -178,8 +155,6 @@ const Navbar = ({ variant = "transparent" }) => {
                       </li>
                     </ul>
                   </div>
-
-
                   {/* Mobile Footer */}
                   <div className="mobile-footer px-20 py-20 border-top-light js-mobile-footer"></div>
 
@@ -188,10 +163,9 @@ const Navbar = ({ variant = "transparent" }) => {
 
             </div>
           </div>
-          {/* ================= RIGHT SIDE ================= */}
+          {/*  RIGHT SIDE  */}
           <div className="col-auto">
             <div className="d-flex items-center">
-
               {/* Desktop Button */}
               <div className="d-none d-lg-flex items-center ml-20 is-menu-opened-hide">
                 <NavLink
@@ -201,8 +175,6 @@ const Navbar = ({ variant = "transparent" }) => {
                   Sign In / Register
                 </NavLink>
               </div>
-
-
               {/* Mobile Icons */}
               <div className="d-flex d-lg-none x-gap-20 items-center pl-30 text-white">
 
@@ -213,8 +185,6 @@ const Navbar = ({ variant = "transparent" }) => {
                     className="d-flex items-center icon-user text-inherit text-22"
                   ></NavLink>
                 </div>
-
-
                 {/* Mobile Menu Button */}
                 <div>
                   <button
@@ -226,16 +196,12 @@ const Navbar = ({ variant = "transparent" }) => {
                     <span></span>
                   </button>
                 </div>
-
               </div>
-
             </div>
           </div>
-
         </div>
       </div>
     </header>
   );
 };
-
 export default Navbar;
