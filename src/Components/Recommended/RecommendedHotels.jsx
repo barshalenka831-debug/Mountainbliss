@@ -29,7 +29,7 @@ const RecommendedHotels = () => {
         </div>
 
         {/* Main Slider */}
-        <div className="pt-40 sm:pt-20 position-relative">
+        <div className="pt-20 sm:pt-20 position-relative">
 
           <Swiper
             modules={[Navigation, Pagination]}

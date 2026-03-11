@@ -44,7 +44,7 @@ const HolidayRentals = () => {
                         </div>
                     </div>
 
-                    <div className="row y-gap-30 pt-20">
+                    <div className="row y-gap-30 pt-10">
                         {Rentals.map((Rentals, Index) => (
                             <div key={Index} className="col-xl-3 col-lg-3 col-sm-6">
 

@@ -35,7 +35,7 @@ const RecommendedCard = ({ title, location, slider, price, images }) => {
           </div>
 
           <div className="cardImage__wishlist">
-            <button className="button -blue-1 bg-white size-30 rounded-full shadow-2">
+            <button className="button -blue-1 bg-white size-30 rounded-full shadow-2 mt-2 ml-5">
               <i className="fa-regular fa-heart text-12"></i>
             </button>
           </div>

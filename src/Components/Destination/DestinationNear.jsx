@@ -24,7 +24,7 @@ const DestinationNear = () => {
         <div className="row y-gap-20">
           <div className="col-auto">
             <div className="sectionTitle -md">
-              <h2 className="sectionTitle__title">Destinations near London</h2>
+              <h2 className="sectionTitle__title fw-bold">Destinations near London</h2>
               <p className="sectionTitle__text mt-3 sm:mt-0">
                 These popular destinations have a lot to offer
               </p>
@@ -32,7 +32,7 @@ const DestinationNear = () => {
           </div>
         </div>
 
-        <div className="pt-30 position-relative">
+        <div className="pt-20 position-relative">
 
           {/* Custom Arrows */}
           <button className="custom-prev swiper-arrow">

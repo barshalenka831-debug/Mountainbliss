@@ -57,7 +57,7 @@ const PopularTour = () => {
                         </div>
                     </div>
 
-                    <div className="row y-gap-30 pt-30 sm:pt-20">
+                    <div className="row y-gap-30 pt-20 sm:pt-20">
                         {places.map((item, Index) => (
 
 
@@ -77,7 +77,7 @@ const PopularTour = () => {
                                             </div>
 
                                             <div className="cardImage__wishlist">
-                                                <button className="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                                                <button className="button -blue-1 bg-white size-30 rounded-full shadow-2 ml-5 mt-2">
                                                     <i className="fa-regular fa-heart text-12"></i>
                                                 </button>
                                             </div>

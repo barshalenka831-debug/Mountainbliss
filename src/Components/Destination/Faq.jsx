@@ -43,7 +43,7 @@ const Faq = () => {
         <div className="row y-gap-20">
           
           <div className="col-lg-4">
-            <h2 className="text-30 fw-500">
+            <h2 className="text-30 fw-bold">
               FAQs about <br /> London
             </h2>
           </div>

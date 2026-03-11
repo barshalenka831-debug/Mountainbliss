@@ -30,12 +30,12 @@ const GetInspiration = () => {
                         <div className="col-auto">
                             <div className="sectionTitle -md">
                                 <h2 className="sectionTitle__title">Get inspiration for your next trip</h2>
-                                <p className=" sectionTitle__text mt-5 sm:mt-0">Mountain Hikes, Farm walks, Waterfall Lawn Games, Sunrise & Sunset views Stargazing, Mountain Bike Park, Bonfire, Camping, Experience</p>
+                                <p className=" sectionTitle__text mt-3 sm:mt-0">Mountain Hikes, Farm walks, Waterfall Lawn Games, Sunrise & Sunset views Stargazing, Mountain Bike Park, Bonfire, Camping, Experience</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="row y-gap-30 pt-40">
+                    <div className="row y-gap-30 pt-20">
                         {GetInspirations.map((GetInspirations, Index) => (
 
                             <div key={Index} className="col-lg-4 col-sm-6">

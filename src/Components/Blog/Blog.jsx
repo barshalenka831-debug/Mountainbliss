@@ -3,6 +3,8 @@ import Navbar from "../Navbar/Navbar";
 import { assets } from "../../assets/assets";
 import Subscribe from "../Footer/Subscribe";
 import Footer from "../Footer/Footer";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const Blog = () => {
 
@@ -47,11 +49,8 @@ const Blog = () => {
   return (
     <div>
       <Navbar variant="dark" />
-
-      <section className="layout-pt-md layout-pb-lg mt-5">
-
+      <section className="layout-pt-md layout-pb-lg mt-5" data-aos="fade-up">
         <div className="container">
-
           {/* SECTION TITLE */}
           <div className="row justify-content-center text-center">
             <div className="col-lg-6">
@@ -63,8 +62,6 @@ const Blog = () => {
               </div>
             </div>
           </div>
-
-
           {/* TABS BUTTONS */}
           <div className="row justify-content-center g-2 mt-4">
 
@@ -73,13 +70,11 @@ const Blog = () => {
                 Art and culture
               </button>
             </div>
-
             <div className="col-auto">
               <button className="tabs__button text-14 fw-500 px-20 py-10 rounded-1 bg-light-2">
                 Beaches
               </button>
             </div>
-
             <div className="col-auto">
               <button className="tabs__button text-14 fw-500 px-20 py-10 rounded-1 bg-light-2">
                 Adventure travel
@@ -91,36 +86,28 @@ const Blog = () => {
                 Explore
               </button>
             </div>
-
             <div className="col-auto">
               <button className="tabs__button text-14 fw-500 px-20 py-10 rounded-1 bg-light-2">
                 Family holidays
               </button>
             </div>
-
             <div className="col-auto">
               <button className="tabs__button text-14 fw-500 px-20 py-10 rounded-1 bg-light-2">
                 Air travel
               </button>
             </div>
-
             <div className="col-auto">
               <button className="tabs__button text-14 fw-500 px-20 py-10 rounded-1 bg-light-2">
                 Food and drink
               </button>
             </div>
-
           </div>
-
-
           {/* BLOG CARDS */}
           <div className="row g-4 mt-4">
 
             {Articles.map((article, index) => (
               <div key={index} className="col-12 col-sm-6 col-lg-4">
-
                 <div className="blogCard -type-1 d-block">
-
                   <div className="blogCard__image">
                     <div className="ratio ratio-4x3 rounded-3 overflow-hidden">
                       <img
@@ -152,8 +139,8 @@ const Blog = () => {
         </div>
 
       </section>
-      <Subscribe/>
-      <Footer/>
+      <Subscribe />
+      <Footer />
     </div>
   );
 };
